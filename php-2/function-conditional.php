@@ -67,7 +67,7 @@ function reverse($words)
 function reverseString($string)
 {
     $reverseFunction = reverse($string);
-    echo $rev ."<br>";
+    echo $reverseFunction ."<br>";
 }
 
 // Hapus komentar di bawah ini untuk jalankan Code
@@ -93,9 +93,23 @@ NB: DILARANG menggunakan built-in function PHP seperti strrev() dll. Gunakan loo
 
 
 // Code function di sini
+function balikKata($kata)
+{
+    $panjangKata = strlen($kata);
+    $dump =  "";
+    $y = ($panjangKata-1);
+
+    while($y >= 0 )
+    {
+        $dump .= $kata[$y];
+        $y--;
+    }
+    return $dump;
+}
+
 function palindrome($pali)
 {
-    $palindromeFunction = reverse($pali);
+    $palindromeFunction = balikKata($pali);
     
     if ($palindromeFunction == $pali)
     {
