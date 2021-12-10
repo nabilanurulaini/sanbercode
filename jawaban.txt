@@ -1,0 +1,26 @@
+1. Create database myshop
+create database myshop;
+2. Create table users
+ 	create table users(id int auto_increment, name varchar(255), email varchar (255), password varchar(255), primary key(id));
+   Create table categories
+ 	create table categories (id int auto_increment, name varchar(255), primary key(id));
+   Create table items
+	create table items (id int auto_increment primary key , name varchar(255), description varchar(255), price int, stock int, category_id int, constraint `fk_category_id` foreign key (category_id) references categories(id));
+3. Insert to tabel users
+	insert into users(name, email, password) values ('John Doe','john@doe.com','john123'),('Jane Doe', 'jane@doe.com', 'jenita123');
+   Insert to tabel categories
+	insert into categories(name) values ('gadget'), ('cloth'), ('men'), ('women'), ('branded');
+   Insert to tabel items
+	insert into items (name, description, price, stock, category_id) values ('Sumsang b50', 'hape keren dari merek sumsang','4000000', '100', '1'), ('Uniklooh', 'baju keren dari brand ternama', '500000', '50', '2'), ('IMHO Watch', 'jam tangan anak yang jujur banget', '2000000', '10', '1');
+
+4. a. Show seluruh  data users kecuali password
+	select name, email from users;
+   b. Show data from items where the price is up to 1000000
+	select * from items where price>1000000;
+      Query for name like sang
+	select * from items where name like '%sang%';
+   c. Show data items with join
+	select items.name, items.description, items.price, items.stock, items.category_id, categories.name as kategori from items join categories on items.category_id=categories.id;
+
+5. Update Sumsang b50 price query 
+	update items set price='2500000' where name='Sumsang b50';
