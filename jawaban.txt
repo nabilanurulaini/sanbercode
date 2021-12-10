@@ -20,7 +20,7 @@ create database myshop;
       Query for name like sang
 	select * from items where name like '%sang%';
    c. Show data items with join
-	select items.name, items.description, items.price, items.stock, items.category_id, categories.name as kategori from items join categories on items.category_id=categories.id;
+	select items.name, items.description, items.price, items.stock, items.category_id, categories.name as kategori from items left join categories on items.category_id=categories.id;
 
 5. Update Sumsang b50 price query 
 	update items set price='2500000' where name='Sumsang b50';
