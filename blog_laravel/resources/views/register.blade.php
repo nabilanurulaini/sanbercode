@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sign Up Form</title>
-</head>
-<body>
-    <h1>Buat Account Baru!</h1>
+@extends('layout.master')
+@section('title')
+   Register
+@endsection
+@section('content')
+
+    <h1></h1>
     <h2>Sign Up Form</h2>
     <form action="/welcome" method="POST">
         @csrf
@@ -82,5 +80,4 @@
         </table>
         <input type="submit" value="Sign Up">
     </form>
-</body>
-</html>
+    @endsection

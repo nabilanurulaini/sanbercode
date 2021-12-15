@@ -24,4 +24,12 @@ class AuthController extends Controller
                 'name' => $name]);
 
     }
+    public function data_table()
+    {
+        return view('table.data-table');
+    }
+    public function table()
+    {
+        return view('table.table');
+    }
 }
