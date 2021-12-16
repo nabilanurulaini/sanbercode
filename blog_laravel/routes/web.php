@@ -15,9 +15,10 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/register', 'AuthController@register');
 Route::POST('/welcome', 'AuthController@biodata');
-Route::get('/', 'HomeController@index');
 Route::get('/table', 'AuthController@table');
 Route::get('/data-table', 'AuthController@data_table');
+Route::get('/', 'HomeController@index');
+
 
 // Route::get('/master', function(){
 //     return view('layout.master');

@@ -6,6 +6,7 @@ Halaman Data Table
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.css"/>
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.js"></script>
 @endpush
+
 @push('script')
     <script src="{{('admin/plugins/datatables/jquery.dataTables.js')}}"></script>
     <script src="{{('admin/plugins/datatables-bs4/js/dataTables.bootstrap4.js')}}"></script>
