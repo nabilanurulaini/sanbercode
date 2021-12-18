@@ -32,7 +32,13 @@ Route::POST('/cast', 'CastController@store');
 
 Route::DELETE('/cast/{cast_id}', 'CastController@destroy');
 
-
+Route::POST('/genre', 'GenreController@store');
+Route::GET('/genre/create', 'GenreController@create');
+Route::GET('/genre', 'GenreController@index');
+Route::GET('/genre/{genre_id}', 'GenreController@show');
+Route::GET('/genre/{genre_id}/edit', 'GenreController@edit');
+Route::PUT('/genre/{genre_id}', 'GenreController@update');
+Route::DELETE('/genre/{genre_id}', 'GenreController@destroy');
 
 // Route::get('/master', function(){
 //     return view('layout.master');

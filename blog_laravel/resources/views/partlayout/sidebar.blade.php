@@ -35,65 +35,86 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
 
-          <li class="nav-item">
-            <a href="/" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Dashboard
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Tables
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/data-table" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Table</p>
+            <li class="nav-item">
+                <a href="/" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                    Dashboard
+                </p>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="/table" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Table</p>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                    Tables
+                    <i class="right fas fa-angle-left"></i>
+                </p>
                 </a>
-              </li>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="/data-table" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Data Table</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/table" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Table</p>
+                        </a>
+                    </li>
 
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
-              <p>
-                Cast
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/cast/create" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Cast</p>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-users"></i>
+                <p>
+                    Cast
+                    <i class="right fas fa-angle-left"></i>
+                </p>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="/cast" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Show Cast</p>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="/cast/create" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Add Cast</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/cast" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Show Cast</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>
+                    Genre
+                    <i class="right fas fa-angle-left"></i>
+                </p>
                 </a>
-              </li>
-
-
-            </ul>
-          </li>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="/genre/create" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Add Genre</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/genre" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Show Genre</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
         </ul>
-      </nav>
+    </nav>
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->

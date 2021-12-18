@@ -16,7 +16,7 @@ class CastController extends Controller
         $request->validate([
             'nama' => 'required|max:255',
             'umur' => 'required',
-            'bio' => 'required',
+            'bio' => 'required'
         ]);
 
         DB::table('cast')->insert([
