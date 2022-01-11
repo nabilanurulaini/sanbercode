@@ -1,0 +1,60 @@
+body {
+	background-image: url(../img/pattern.jpg);
+	margin: 0px;
+  }
+  header.pembuka {
+	position: fixed;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	top: 0;
+	left: 0px;
+	right: 0px;
+	color: white;
+  }
+  li {
+	display: inline;
+	margin: 10px;
+  }
+  p {
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  h1 {
+	text-align: center;
+	color: black;
+  }
+  h5 {
+	text-align: center;
+	color: black;
+	font-size: 15px;
+  }
+  section {
+	background-color: rgb(248, 247, 247);
+	margin: 100px 200px 30px;
+	padding: 20px;
+  }
+  a {
+	text-decoration: none;
+  }
+  a:hover {
+	background-color: #a3a3a3;
+	color: 818281;
+  }
+  a:active {
+	background-color: #acacac;
+	color: #818281;
+  }
+  p {
+	border-style: hidden hidden solid;
+	padding-bottom: 25px;
+	border-bottom-color: rgb(206, 206, 206);
+  }
+  
+  footer {	  
+	padding: 4px;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+  }
+  
