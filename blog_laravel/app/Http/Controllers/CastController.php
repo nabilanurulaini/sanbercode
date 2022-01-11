@@ -51,7 +51,7 @@ class CastController extends Controller
     }
     public function update(Request $request, $id)
     {
-        $request->validate([
+        $this->validate($request,[
             'nama' => 'required|max:255',
             'umur' => 'required',
             'bio'  => 'required',

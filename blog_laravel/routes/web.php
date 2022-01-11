@@ -40,6 +40,14 @@ Route::GET('/genre/{genre_id}/edit', 'GenreController@edit');
 Route::PUT('/genre/{genre_id}', 'GenreController@update');
 Route::DELETE('/genre/{genre_id}', 'GenreController@destroy');
 
+
+Route::POST('/film', 'FilmController@store');
+Route::GET('/film/create', 'FilmController@create');
+Route::GET('/film', 'FilmController@index');
+Route::GET('/film/{film_id}', 'FilmController@show');
+Route::GET('/film/{film_id}/edit', 'FilmController@edit');
+Route::PUT('/film/{film_id}', 'FilmController@update');
+Route::DELETE('/film/{film_id}', 'FilmController@destroy');
 // Route::get('/master', function(){
 //     return view('layout.master');
 //     });

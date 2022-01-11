@@ -3,7 +3,8 @@
 Add Cast
 @endsection
 @section('content')
-<form action="/cast" method="POST">
+
+<form action="/cast" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
         <label >Name</label>
